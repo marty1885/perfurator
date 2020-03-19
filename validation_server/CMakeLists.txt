@@ -1,0 +1,5 @@
+project(validation_server)
+add_executable(validation_server validation_server.cpp)
+find_package(Drogon REQUIRED)
+target_link_libraries(validation_server PRIVATE ssl crypto pthread ${DROGON_LIBRARIES} tbb)
+include_directories(validation_server ${DROGON_INCLUDE_DIRS})

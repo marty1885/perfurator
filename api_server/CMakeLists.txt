@@ -1,0 +1,5 @@
+project(api_server)
+add_executable(api_server api_server.cpp)
+find_package(Drogon REQUIRED)
+target_link_libraries(api_server PRIVATE ssl crypto pthread ${DROGON_LIBRARIES})
+include_directories(api_server ${DROGON_INCLUDE_DIRS})
