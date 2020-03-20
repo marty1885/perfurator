@@ -1,3 +1,3 @@
 # perfurator
 
-A quick and hacky codebase of a scalable perchesing service.
+A quick and hacky codebase of a scalable purchasing service.
